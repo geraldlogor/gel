@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '127.0.0.1';
-$db['default']['username'] = 'k9425962_dbuser';
-$db['default']['password'] = 'gelyticscom';
-$db['default']['database'] = 'k9425962_db';
+$db['default']['hostname'] = '';
+$db['default']['username'] = '';
+$db['default']['password'] = '';
+$db['default']['database'] = '';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

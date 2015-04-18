@@ -172,28 +172,6 @@ gapi.analytics.ready(function() {
     var htmlStr = '<button type="button" id="logout_bt" class="btn btn-default btn-xs" onclick="logOut();" style="float: right; margin: 2px 0 5px 0"> Logout</button>';
     $('#embed-api-auth-container > div:nth-child(2)').after(htmlStr);  
 
-    $.getJSON('https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token='+response.access_token, function(data) {
-        var usremail = data.email;
-        $.ajax({
-          type: "POST",
-          url: "checkuser.php",
-          data: { value : usremail },
-          success: function(data) {
-            if(data == 'EXPIRED'){
-              alert("Sorry, your free trial has expired. Thank you for trying out. Contact gerald.logor@gmail.com for registration.");
-              location.href='http://gelytics.com';
-              logOut();
-            } else if(data == 'NEW'){
-              $.ajax({
-                type: "POST",
-                url: "insertuser.php",
-                data: { value : usremail }
-              });
-            } 
-          }
-        });
-    });//end getJSON
-
   });
 
 
