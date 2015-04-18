@@ -1,0 +1,90 @@
+.DateRangeSelector {
+display:flex;
+-webkit-flex-wrap:wrap;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap;
+margin:9px 0 -1em -1em;
+}
+
+.DateRangeSelector-item {
+-webkit-flex:1 0 calc(100%-1em);
+-ms-flex:1 0 calc(100%-1em);
+flex:1 0 calc(100%-1em);
+margin:0 0 1em 1em;
+}
+
+.ViewSelector table,.ViewSelector2-item {
+display:block;
+margin-bottom:1em;
+width:100%;
+}
+
+.ViewSelector table {
+height:auto!important;
+width:auto!important;
+}
+
+.ViewSelector td {
+width:auto!important;
+}
+
+.ViewSelector td:last-child * {
+display:block;
+text-align:left;
+}
+
+.ViewSelector td:last-child>div {
+font-weight:400;
+margin:0;
+}
+
+.ViewSelector,.ViewSelector2,.ViewSelector table,.ViewSelector tbody,.ViewSelector td,.ViewSelector tr, {
+display:block;
+}
+.DateRangeSelector-item>label,.ViewSelector td:first-child,.ViewSelector2-item>label {
+font-weight:700;
+display:block;
+margin:0 .25em .25em 0;
+}
+.DateRangeSelector-item>input,.ViewSelector2-item>select {
+width:100%;
+}
+
+.ViewSelector,.ViewSelector2 {
+display:flex;
+width:calc(100%+1em);
+margin:0 0 -1em -1em;
+}
+
+.ViewSelector table,.ViewSelector2-item {
+-webkit-flex:1 1 calc(100%/3-1em);
+-ms-flex:1 1 calc(100%/3-1em);
+flex:1 1 calc(100%/3-1em);
+margin-left:1em;
+}
+
+
+.DateRangeSelector-item {
+-webkit-flex-basis:auto;
+-ms-flex-preferred-size:auto;
+flex-basis:auto;
+width:150px;
+}
+
+
+input, select {
+    border: 1px solid #D4D2D0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-size: inherit;
+    font-size-adjust: inherit;
+    font-stretch: inherit;
+    -moz-font-feature-settings: inherit;
+    -moz-font-language-override: inherit;
+    font-weight: 400;
+    height: 2.42857em;
+    line-height: 1.42857em;
+    padding: 0.428571em;
